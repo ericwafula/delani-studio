@@ -110,17 +110,17 @@
 }
 
 /* Design */
-.design-image{
+.design-description{
     display: none;
 }
 
 /* dev */
-.dev-image{
+.dev-description{
     display: none;
 }
 
 /* product image */
-.product-image{
+.product-description{
     display: none;
 }
 
