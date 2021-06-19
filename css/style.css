@@ -108,3 +108,28 @@
     font-weight: 100;
     margin-top: 10px;
 }
+
+/* Design */
+.design-image{
+    display: none;
+}
+
+/* dev */
+.dev-image{
+    display: none;
+}
+
+/* product image */
+.product-image{
+    display: none;
+}
+
+/* icon headings */
+.icon-headings h5{
+    font-weight: bold;
+}
+
+/* icon descriptions */
+.icon-descriptions{
+    text-align: center;
+}
