@@ -3,3 +3,8 @@
     margin: 0;
 }
 
+/* Styles the hero section */
+.hero-section{
+    background-image: url("../images/backgrounds/h_img.jpg");
+    border-radius: 0;
+}
