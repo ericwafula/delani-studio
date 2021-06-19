@@ -1,6 +1,12 @@
 /* resets the default margin values */
 *{
     margin: 0;
+    padding: 0;
+}
+
+/* global styles */
+:root{
+    --heading-font-family: 'Roboto', sans-serif;
 }
 
 /* Styles the hero section */
@@ -8,15 +14,32 @@
     background-image: url("../images/backgrounds/h_img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     border-radius: 0;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 255px;
+    padding-top: 310px;
+    color: white;
 }
 
 /* Styles the heading */
 #hero-section-heading{
-    font-size: 48px;
+    font-size: 52px;
     font-weight: normal;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 40px;
+    font-family: var(--heading-font-family);
 }
+
+/* Styles the hero subheading */
+#hero-section-subheading{
+    margin-top: -10px;
+}
+
+/* Styles the mouse click */
+#mouse-click{
+    margin-top: 220px;
+}
+
