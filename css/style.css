@@ -6,5 +6,17 @@
 /* Styles the hero section */
 .hero-section{
     background-image: url("../images/backgrounds/h_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 255px;
+}
+
+/* Styles the heading */
+#hero-section-heading{
+    font-size: 48px;
+    font-weight: normal;
 }
