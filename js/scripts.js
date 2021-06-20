@@ -32,39 +32,77 @@ $(document).ready(function(){
     });
 
     // Hover animation
+    // ###### FIRST ROW ######
     // Work 1
-    $(".first").mouseover(function(){
+    $(".one").mouseover(function(){
         $(".work1").show();
     });
 
-    $(".first").mouseout(function(){
+    $(".one").mouseout(function(){
         $(".work1").hide();
     });
 
     // Work 2
-    $(".second").mouseover(function(){
+    $(".two").mouseover(function(){
         $(".work2").show();
     });
 
-    $(".second").mouseout(function(){
+    $(".two").mouseout(function(){
         $(".work2").hide();
     });
 
     // Work 3
-    $(".third").mouseover(function(){
+    $(".three").mouseover(function(){
         $(".work3").show();
     });
 
-    $(".third").mouseout(function(){
+    $(".three").mouseout(function(){
         $(".work3").hide();
     });
 
     // Work 4
-    $(".fourth").mouseover(function(){
+    $(".four").mouseover(function(){
         $(".work4").show();
     });
 
-    $(".fourth").mouseout(function(){
+    $(".four").mouseout(function(){
         $(".work4").hide();
+    });
+
+    // ###### SECOND ROW ######
+    // Work 5
+    $(".five").mouseover(function(){
+        $(".work5").show();
+    });
+
+    $(".five").mouseout(function(){
+        $(".work5").hide();
+    });
+
+    // Work 6
+    $(".six").mouseover(function(){
+        $(".work6").show();
+    });
+
+    $(".six").mouseout(function(){
+        $(".work6").hide();
+    });
+
+    // Work 7
+    $(".seven").mouseover(function(){
+        $(".work7").show();
+    });
+
+    $(".seven").mouseout(function(){
+        $(".work7").hide();
+    });
+
+    // Work 8
+    $(".eight").mouseover(function(){
+        $(".work8").show();
+    });
+
+    $(".eight").mouseout(function(){
+        $(".work8").hide();
     });
 });

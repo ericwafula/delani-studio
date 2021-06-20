@@ -140,8 +140,10 @@
     margin-bottom: 20px;
 }
 
-/* portfolio images */
-.portfolio-images > :first-child{
+/* ########## portfolio images first row ########## */
+
+/* OIRA */
+.portfolio-images-first > :first-child{
     background-image: url("../images/portfolio/work1.jpg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -154,7 +156,8 @@
 
 }
 
-.portfolio-images > :nth-child(2){
+/* ZEPHYRIA */
+.portfolio-images-first > :nth-child(2){
     background-image: url("../images/portfolio/work2.jpg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -167,7 +170,8 @@
 
 }
 
-.portfolio-images > :nth-child(3){
+/* ZEPHON */
+.portfolio-images-first > :nth-child(3){
     background-image: url("../images/portfolio/work3.jpg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -180,7 +184,8 @@
 
 }
 
-.portfolio-images > :nth-child(4){
+/* UI/UX LAB */
+.portfolio-images-first > :nth-child(4){
     background-image: url("../images/portfolio/work4.jpg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -193,9 +198,67 @@
 
 }
 
+/* ########## portfolio images second row ########## */
+
+/* WEB.IO */
+.portfolio-images-second > :first-child{
+    background-image: url("../images/portfolio/work5.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* FRAME.IO */
+.portfolio-images-second > :nth-child(2){
+    background-image: url("../images/portfolio/work6.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* LOGO CITY */
+.portfolio-images-second > :nth-child(3){
+    background-image: url("../images/portfolio/work7.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* BAILEY WONGER */
+.portfolio-images-second > :nth-child(4){
+    background-image: url("../images/portfolio/work8.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 /* adds overlay to all work containers */
-.work1, .work2, .work3, .work4{
-    background-color: rgba(0, 0, 0, .7);
+.work1, .work2, .work3, .work4, .work5, .work6, .work7, .work8{
+    background-color: rgba(0, 0, 0, .8);
     height: 200px;
     width: 245px;
     padding: 20px;
@@ -206,7 +269,7 @@
 }
 
 /* adds border to work 1 */
-.work1 > h4, .work2 > h4, .work3 > h4, .work4 > h4{
+.work1 > h4, .work2 > h4, .work3 > h4, .work4 > h4, .work5 > h4, .work6 > h4, .work7 > h4, .work8 > h4{
     border: solid white 3px;
     box-sizing: border-box;
     width: 200px;
