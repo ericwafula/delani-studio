@@ -105,4 +105,13 @@ $(document).ready(function(){
     $(".eight").mouseout(function(){
         $(".work8").hide();
     });
+
+    // ####### Form #######
+    $(".contact-us form").submit(function(event){
+        let name = $("#name").val();
+        let email = $("#email").val();
+        let message = $("text-area").val();
+        alert(name + " " + email + " " + message);
+        event.preventDefault();
+    });
 });

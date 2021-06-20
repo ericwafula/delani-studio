@@ -277,3 +277,69 @@
     padding: 20px;
     color: white;
 }
+
+
+/* ######## CONTACT US SECTION ######## */
+.contact-section{
+    background-image: url("../images/backgrounds/c_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Heading */
+.contact-section h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* inner section */
+.contact-us{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+/* form */
+.form-control{
+    background:none;
+    border-radius: 0;
+    border-width: 2px;
+    border-color: white;
+    color: white;
+}
+
+.form-control:focus{
+    background:none;
+    color: white;
+}
+
+.form-control::placeholder{
+    color: white;
+}
+
+/* name/email and textarea gap */
+.name-email{
+    margin-bottom: 30px;
+}
+
+/* text area height */
+#text-area{
+    height: 180px;
+    position: relative;
+}
+
+#text-area::placeholder{
+    position: relative;
+    bottom: 70px;
+}
+
+#text-area::content{
+    position: relative;
+    bottom: 70px;
+}
+
+/* Submit button */
+.btn{
+    margin-top: 20px;
+}
