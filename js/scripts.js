@@ -31,5 +31,40 @@ $(document).ready(function(){
         $(".product-description").hide();
     });
 
-    
+    // Hover animation
+    // Work 1
+    $(".first").mouseover(function(){
+        $(".work1").show();
+    });
+
+    $(".first").mouseout(function(){
+        $(".work1").hide();
+    });
+
+    // Work 2
+    $(".second").mouseover(function(){
+        $(".work2").show();
+    });
+
+    $(".second").mouseout(function(){
+        $(".work2").hide();
+    });
+
+    // Work 3
+    $(".third").mouseover(function(){
+        $(".work3").show();
+    });
+
+    $(".third").mouseout(function(){
+        $(".work3").hide();
+    });
+
+    // Work 4
+    $(".fourth").mouseover(function(){
+        $(".work4").show();
+    });
+
+    $(".fourth").mouseout(function(){
+        $(".work4").hide();
+    });
 });
