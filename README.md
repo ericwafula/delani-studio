@@ -11,13 +11,14 @@ Delani Studio website portfolio showcase and contact information
 Make sure to use live server on vscode or it's equivalent in atom. If not installed, install in extensions marketplace. Click Go Live to run the server.
 
 ## Live Link
-     Deployed project can be accessed here - [Akan Names Generator](https://ericwafula.github.io/delani-studio/)
+     Deployed project can be accessed here - [Delani Studio](https://ericwafula.github.io/delani-studio/)
 
 ## Known Bugs
 There are no known bugs at the moment
 ## Technologies Used
     - HTML
     - CSS
+    - Bootstrap
     - Javascript
     - jQuery
 ## Support and contact details
