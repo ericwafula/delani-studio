@@ -30,4 +30,6 @@ $(document).ready(function(){
         $(".product-image").show();
         $(".product-description").hide();
     });
+
+    
 });
