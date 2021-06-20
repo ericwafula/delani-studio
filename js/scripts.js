@@ -111,7 +111,7 @@ $(document).ready(function(){
         let name = $("#name").val();
         let email = $("#email").val();
         let message = $("text-area").val();
-        alert(name + " " + email + " " + message);
+        alert("Thanks for contacting us " + name + ", we have received your message");
         event.preventDefault();
     });
 });
