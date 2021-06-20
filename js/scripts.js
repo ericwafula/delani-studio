@@ -1,35 +1,20 @@
 // UI Logic
 $(document).ready(function(){
     // Toggles between the hidden icons
-    $(".design-image").click(function(){
-        $(".design-description").show();
-        $(".design-image").hide();
+    let items = [{image: "design-image", description: "design-description"}, {image: "dev-image", description: "dev-description"}, {image: "product-image", description: "product-description"}];
+
+    items.forEach(function(item){
+        $("." + item.image).click(function(){
+            $("." + item.description).show();
+            $("." + item.image).hide();
+        });
+
+        $("." + item.description).click(function(){
+            $("." + item.image).show();
+            $("." + item.description).hide();
+        });
     });
 
-    $(".design-description").click(function(){
-        $(".design-image").show();
-        $(".design-description").hide();
-    });
-
-    $(".dev-image").click(function(){
-        $(".dev-description").show();
-        $(".dev-image").hide();
-    });
-
-    $(".dev-description").click(function(){
-        $(".dev-image").show();
-        $(".dev-description").hide();
-    });
-
-    $(".product-image").click(function(){
-        $(".product-description").show();
-        $(".product-image").hide();
-    });
-
-    $(".product-description").click(function(){
-        $(".product-image").show();
-        $(".product-description").hide();
-    });
 
     // Hover animation
     // ###### FIRST ROW ######
