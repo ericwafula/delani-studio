@@ -342,4 +342,7 @@
 /* Submit button */
 .btn{
     margin-top: 20px;
+    background: white;
+    color: black;
+    border: none;
 }
