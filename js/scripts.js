@@ -1,6 +1,21 @@
-// UI Logic
+// ######### Business Logic ##########
+// validates name and email
+var validate = function(name, email){
+    // let regX = /^(a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
+    if (name === null || name === ""){
+        alert("Your name field can't be empty!");
+    }
+    else if(email === null || email === ""){
+        alert("Invalid email!");
+    } 
+    return [name, email];
+}
+
+
+
+// ######### UI Logic ###########
 $(document).ready(function(){
-    // Toggles between the hidden icons
+    // Toggles between the hidden "WHAT WE DO" icons
     let items = [{image: "design-image", description: "design-description"}, {image: "dev-image", description: "dev-description"}, {image: "product-image", description: "product-description"}];
 
     items.forEach(function(item){
@@ -16,79 +31,17 @@ $(document).ready(function(){
     });
 
 
-    // Hover animation
-    // ###### FIRST ROW ######
-    // Work 1
-    $(".one").mouseover(function(){
-        $(".work1").show();
-    });
+    // "PORTFOLIO" Hover animation
+    let portfolios = [{work: "one", info: "work1"}, {work: "two", info: "work2"}, {work: "three", info: "work3"}, {work: "four", info: "work4"}, {work: "five", info: "work5"}, {work: "six", info: "work6"}, {work: "seven", info: "work7"}, {work: "eight", info: "work8"}];
 
-    $(".one").mouseout(function(){
-        $(".work1").hide();
-    });
+    portfolios.forEach(function(portfolio){
+        $("." + portfolio.work).mouseover(function(){
+            $("." + portfolio.info).show();
+        });
 
-    // Work 2
-    $(".two").mouseover(function(){
-        $(".work2").show();
-    });
-
-    $(".two").mouseout(function(){
-        $(".work2").hide();
-    });
-
-    // Work 3
-    $(".three").mouseover(function(){
-        $(".work3").show();
-    });
-
-    $(".three").mouseout(function(){
-        $(".work3").hide();
-    });
-
-    // Work 4
-    $(".four").mouseover(function(){
-        $(".work4").show();
-    });
-
-    $(".four").mouseout(function(){
-        $(".work4").hide();
-    });
-
-    // ###### SECOND ROW ######
-    // Work 5
-    $(".five").mouseover(function(){
-        $(".work5").show();
-    });
-
-    $(".five").mouseout(function(){
-        $(".work5").hide();
-    });
-
-    // Work 6
-    $(".six").mouseover(function(){
-        $(".work6").show();
-    });
-
-    $(".six").mouseout(function(){
-        $(".work6").hide();
-    });
-
-    // Work 7
-    $(".seven").mouseover(function(){
-        $(".work7").show();
-    });
-
-    $(".seven").mouseout(function(){
-        $(".work7").hide();
-    });
-
-    // Work 8
-    $(".eight").mouseover(function(){
-        $(".work8").show();
-    });
-
-    $(".eight").mouseout(function(){
-        $(".work8").hide();
+        $("." + portfolio.work).mouseout(function(){
+            $("." + portfolio.info).hide();
+        });
     });
 
     // ####### Form #######
@@ -96,7 +49,8 @@ $(document).ready(function(){
         let name = $("#name").val();
         let email = $("#email").val();
         let message = $("text-area").val();
-        alert("Thanks for contacting us " + name + ", we have received your message");
+        let validateForm = validate(name, email);
+        alert("Hey " + name + ", Your form was successfully submitted");
         event.preventDefault();
     });
 });
