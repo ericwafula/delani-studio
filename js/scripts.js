@@ -7,7 +7,9 @@ var validate = function(name, email){
     }
     else if(email === null || email === ""){
         alert("Invalid email!");
-    } 
+    }else{
+        alert("Hey " + name + ", Your form was successfully submitted");
+    }
     return [name, email];
 }
 
@@ -50,7 +52,7 @@ $(document).ready(function(){
         let email = $("#email").val();
         let message = $("text-area").val();
         let validateForm = validate(name, email);
-        alert("Hey " + name + ", Your form was successfully submitted");
+        
         event.preventDefault();
     });
 });
